@@ -1,0 +1,14 @@
+value = 6
+n = value
+num_list = []
+fact = 1
+
+for i in range(0,n):
+    if n not in num_list:
+        num_list.append(n)
+        n = n-1
+
+for v in range(0,len(num_list)):
+    fact = fact * num_list[v]
+    
+print(f"The Factorial of {value} is {fact}")
