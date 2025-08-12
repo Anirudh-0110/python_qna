@@ -1,0 +1,9 @@
+num1 = 45
+num2 = 87
+num_list = [num1,num2]
+
+for i in range(0,len(num_list)):
+    if num_list[i] > num_list[-1]:
+        print(f"The value {num_list[i]} is greater than {num_list[-1]}")
+    elif num_list[-1] > num_list[i]:
+        print(f"The value {num_list[-1]} is greater than {num_list[i]}")
