@@ -1,0 +1,17 @@
+n = int(input("Enter the number of values: "))
+numbers = []
+
+for _ in range(n):
+    num = int(input("Enter the value: "))
+    numbers.append(num)
+
+def check(*args):
+    for i in args:
+        if i < 0:
+            print(f"The value {i} is Negative")
+        elif i % 2 == 0:
+            print(f"The value {i} is Even")
+        else:
+            print(f"The value {i} is Odd")
+
+check(*numbers)
